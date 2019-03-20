@@ -245,7 +245,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             cell.postImage.kf.indicatorType = .activity
             cell.postImage.kf.setImage(with: URL(string: Data.postImageViewURL!),placeholder: nil,options: [.transition(.fade(0.7))],progressBlock: nil)
             cell.postImage.layer.cornerRadius = cell.postImage.frame.size.width/4
-            print("123")
+           
             return cell
         }
 
@@ -263,6 +263,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         print("321")
         print("333")
         print("435")
+        print("11111")
         
     }
     
