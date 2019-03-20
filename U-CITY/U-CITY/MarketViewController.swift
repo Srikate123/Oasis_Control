@@ -16,8 +16,7 @@ class MarketViewController: UIViewController,UICollectionViewDataSource , UIColl
         super.viewDidLoad()
         self.itemCollectionView.dataSource = self
         self.itemCollectionView.delegate = self
-        
-        print("aaa")
+ 
        
     }
    
