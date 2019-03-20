@@ -256,7 +256,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
-        
+        print("333")
     }
     
 
