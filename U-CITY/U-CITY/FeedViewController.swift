@@ -260,6 +260,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         print("444")
         print("555")
         print("12หห3")
+        print("321")
         
     }
     
