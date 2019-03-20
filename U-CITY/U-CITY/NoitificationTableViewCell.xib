@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdminNotiCellCreat" rowHeight="84" id="KGk-i7-Jjw" customClass="NoitificationTableViewCell" customModule="U_CITY" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UG-EZ-0iv">
+                        <rect key="frame" x="8" y="8" width="343" height="84.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4X-qf-PoF">
+                                <rect key="frame" x="21" y="15.5" width="56" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="eYk-Hy-Pyr"/>
+                                    <constraint firstAttribute="width" constant="56" id="k59-b7-IYG"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icon Admin"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="derykuy;lsfdgdk;wpafl'.cd,';fjd.;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEP-Oz-FKY">
+                                <rect key="frame" x="92" y="13.5" width="243" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="53A-0h-Vhf"/>
+                                    <constraint firstAttribute="width" constant="243" id="yuc-UU-e28"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon Clock" translatesAutoresizingMaskIntoConstraints="NO" id="Lkp-tC-pTn">
+                                <rect key="frame" x="103" y="48" width="28" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="4bh-pe-V8G"/>
+                                    <constraint firstAttribute="width" constant="28" id="icM-za-y3A"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 min ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJH-gb-0Og">
+                                <rect key="frame" x="139" y="52" width="50" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2ve-bJ-9Uy"/>
+                                    <constraint firstAttribute="height" constant="14" id="OYY-Ny-Svp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eJH-gb-0Og" firstAttribute="leading" secondItem="Lkp-tC-pTn" secondAttribute="trailing" constant="8" id="8HZ-jO-QOh"/>
+                            <constraint firstAttribute="width" constant="343" id="8hL-e0-t4V"/>
+                            <constraint firstAttribute="height" constant="84" id="Cb4-zZ-o5G"/>
+                            <constraint firstItem="H4X-qf-PoF" firstAttribute="top" secondItem="5UG-EZ-0iv" secondAttribute="top" constant="15" id="HzC-4i-zaf"/>
+                            <constraint firstItem="H4X-qf-PoF" firstAttribute="leading" secondItem="5UG-EZ-0iv" secondAttribute="leading" constant="21" id="I7e-tQ-JVS"/>
+                            <constraint firstItem="eEP-Oz-FKY" firstAttribute="top" secondItem="5UG-EZ-0iv" secondAttribute="top" constant="13" id="NhD-Kh-MUe"/>
+                            <constraint firstItem="Lkp-tC-pTn" firstAttribute="leading" secondItem="H4X-qf-PoF" secondAttribute="trailing" constant="26" id="ZdP-Hy-FzG"/>
+                            <constraint firstItem="eJH-gb-0Og" firstAttribute="top" secondItem="eEP-Oz-FKY" secondAttribute="bottom" constant="7.5" id="bbG-88-VC3"/>
+                            <constraint firstItem="Lkp-tC-pTn" firstAttribute="top" secondItem="eEP-Oz-FKY" secondAttribute="bottom" constant="3.5" id="x94-5u-h5a"/>
+                            <constraint firstItem="eEP-Oz-FKY" firstAttribute="leading" secondItem="H4X-qf-PoF" secondAttribute="trailing" constant="15" id="zqg-0T-Jyg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5UG-EZ-0iv" secondAttribute="trailing" constant="8" id="8Fk-Ty-5dM"/>
+                    <constraint firstItem="5UG-EZ-0iv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="oh4-Qs-Ybz"/>
+                    <constraint firstItem="5UG-EZ-0iv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qXN-yW-kT3"/>
+                    <constraint firstAttribute="bottom" secondItem="5UG-EZ-0iv" secondAttribute="bottom" constant="8" id="tXa-Zw-T3y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="122.40000000000001" y="172.71364317841082"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon Admin" width="40" height="40"/>
+        <image name="icon Clock" width="11" height="11"/>
+    </resources>
+</document>

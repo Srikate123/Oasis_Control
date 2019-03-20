@@ -1,0 +1,99 @@
+
+/* Class = "UITextField"; placeholder = "Sirname"; ObjectID = "04G-9r-IQB"; */
+"04G-9r-IQB.placeholder" = "Sirname";
+
+/* Class = "UILabel"; text = "Famale"; ObjectID = "5Do-e4-xpU"; */
+"5Do-e4-xpU.text" = "Famale";
+
+/* Class = "UIButton"; normalTitle = "< Back"; ObjectID = "5V3-iz-aI4"; */
+"5V3-iz-aI4.normalTitle" = "< Back";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "6MO-JP-EYW"; */
+"6MO-JP-EYW.placeholder" = "Phone Number";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "7Ry-Qk-PnK"; */
+"7Ry-Qk-PnK.placeholder" = "E-mail";
+
+/* Class = "UILabel"; text = "Firestname"; ObjectID = "9lR-xd-mdN"; */
+"9lR-xd-mdN.text" = "Firestname";
+
+/* Class = "UIButton"; normalTitle = "Add cup"; ObjectID = "E9I-t1-Dh0"; */
+"E9I-t1-Dh0.normalTitle" = "Add cup";
+
+/* Class = "UIButton"; normalTitle = "Add cube"; ObjectID = "FDT-WA-Kho"; */
+"FDT-WA-Kho.normalTitle" = "Add cube";
+
+/* Class = "UITextField"; placeholder = "User name"; ObjectID = "H2w-RG-WSp"; */
+"H2w-RG-WSp.placeholder" = "User name";
+
+/* Class = "UITabBarItem"; title = "Item 2"; ObjectID = "Okq-Pg-LC9"; */
+"Okq-Pg-LC9.title" = "Item 2";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Olh-MV-MJT"; */
+"Olh-MV-MJT.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "Date"; ObjectID = "Q6G-8L-JdM"; */
+"Q6G-8L-JdM.placeholder" = "Date";
+
+/* Class = "UITextField"; placeholder = "       Pass word"; ObjectID = "Qn5-Hh-SUs"; */
+"Qn5-Hh-SUs.placeholder" = "       Pass word";
+
+/* Class = "UITextField"; placeholder = "Years"; ObjectID = "TjB-eT-goW"; */
+"TjB-eT-goW.placeholder" = "Years";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "UKF-De-XA4"; */
+"UKF-De-XA4.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Lastname"; ObjectID = "WY8-aE-ned"; */
+"WY8-aE-ned.text" = "Lastname";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "X4u-4d-nUv"; */
+"X4u-4d-nUv.text" = "Title";
+
+/* Class = "UILabel"; text = "Sex"; ObjectID = "Z62-pm-R2c"; */
+"Z62-pm-R2c.text" = "Sex";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "aNr-T0-9O5"; */
+"aNr-T0-9O5.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "Confirm password"; ObjectID = "ddI-ah-PJx"; */
+"ddI-ah-PJx.placeholder" = "Confirm password";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "eJG-Vw-Fkm"; */
+"eJG-Vw-Fkm.normalTitle" = "Register";
+
+/* Class = "UITabBarItem"; title = "page1"; ObjectID = "edo-71-kHU"; */
+"edo-71-kHU.title" = "page1";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "fU9-ao-pkm"; */
+"fU9-ao-pkm.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "      User name"; ObjectID = "g3W-os-QW6"; */
+"g3W-os-QW6.placeholder" = "      User name";
+
+/* Class = "UITextField"; placeholder = "Month"; ObjectID = "jTm-C5-dak"; */
+"jTm-C5-dak.placeholder" = "Month";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "mKI-xA-cND"; */
+"mKI-xA-cND.placeholder" = "Name";
+
+/* Class = "UIButton"; normalTitle = "Forgot your password?"; ObjectID = "onJ-LO-KtT"; */
+"onJ-LO-KtT.normalTitle" = "Forgot your password?";
+
+/* Class = "UILabel"; text = "Log in"; ObjectID = "saY-UM-f2L"; */
+"saY-UM-f2L.text" = "Log in";
+
+/* Class = "UITextField"; placeholder = "CountryNumber"; ObjectID = "sbY-IV-Tio"; */
+"sbY-IV-Tio.placeholder" = "CountryNumber";
+
+/* Class = "UILabel"; text = "Male"; ObjectID = "sjl-BK-0dB"; */
+"sjl-BK-0dB.text" = "Male";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "vgH-Ci-5Ih"; */
+"vgH-Ci-5Ih.title" = "Item";
+
+/* Class = "UILabel"; text = "Register"; ObjectID = "vrf-er-aYe"; */
+"vrf-er-aYe.text" = "Register";
+
+/* Class = "UILabel"; text = "Date Of Birth"; ObjectID = "yay-XL-cBe"; */
+"yay-XL-cBe.text" = "Date Of Birth";
