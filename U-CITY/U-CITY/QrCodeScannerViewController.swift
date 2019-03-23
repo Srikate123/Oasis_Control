@@ -15,7 +15,9 @@ class QrCodeScannerViewController: UIViewController,AVCaptureMetadataOutputObjec
 
    let avCaptureSession = AVCaptureSession()
     
+    
     @IBOutlet weak var videoPreview: UIView!
+    @IBOutlet weak var backgroundVideoPreview: UIView!
     
     var stringURL = String()
     
@@ -26,7 +28,6 @@ class QrCodeScannerViewController: UIViewController,AVCaptureMetadataOutputObjec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         do {
             try scanQRCode()
         } catch  {
@@ -75,7 +76,10 @@ class QrCodeScannerViewController: UIViewController,AVCaptureMetadataOutputObjec
         let avCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: avCaptureSession)
         avCaptureVideoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         avCaptureVideoPreviewLayer.frame = videoPreview.bounds
+       
+
         self.videoPreview.layer.addSublayer(avCaptureVideoPreviewLayer)
+        self.backgroundVideoPreview.layer.addSublayer(avCaptureVideoPreviewLayer)
         
         avCaptureSession.startRunning()
         
