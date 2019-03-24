@@ -150,8 +150,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         if(Data.Case == 2){
             cell.userName.setTitle(Data.userName, for: .normal)
             cell.postIDLabel.text = Data.postID
-           
-                 cell.haveFunLabel.text = " Have fun"
+            cell.haveFunLabel.text = Data.NumberOfHaveFun
            
             
             let statusHavefun = Bool(Data.statusHavefunClicked)
@@ -188,7 +187,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         else if(Data.Case == 1){
          cell.userName.setTitle(Data.userName, for: .normal)
          cell.postIDLabel.text = Data.postID
-         cell.haveFunLabel.text = " Have fun"
+         cell.haveFunLabel.text = Data.NumberOfHaveFun
             
          let statusHavefun = Bool(Data.statusHavefunClicked)
          if(statusHavefun == true){
@@ -226,7 +225,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
        else if(Data.Case == 3){
             cell.userName.setTitle(Data.userName, for: .normal)
             cell.postIDLabel.text = Data.postID
-            cell.haveFunLabel.text = " Have fun"
+            cell.haveFunLabel.text = Data.NumberOfHaveFun
             let statusHavefun = Bool(Data.statusHavefunClicked)
             if(statusHavefun == true){
                 cell.imageHavefun.image = UIImage(named: "smile")
