@@ -13,6 +13,13 @@ class ResetPasswordViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var EmailTextfield: UITextField!
 
     
+    @IBAction func ddd(_ sender: Any) {
+        let activityController = UIActivityViewController(activityItems: ["test"],
+                                                          applicationActivities: nil)
+        activityController.popoverPresentationController?.sourceView = self.view
+        self.present(activityController, animated: true, completion: nil)
+    }
+    
     
     
     override func viewDidLoad() {

@@ -13,7 +13,7 @@ import Kingfisher
 class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     @IBOutlet weak var tableView:UITableView!
     
-
+    var refreshControl: UIRefreshControl?
     var userdatabaseRefer: DatabaseReference!
     let storageRef = Storage.storage().reference()
     let databaseRef = Database.database().reference()
@@ -56,19 +56,19 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                     var statusHavefunClicked = "false"
                     
                     
-                    print("\(NumberOfHaveFun)4444444")
                     
                     
                     
                     
-//                    let databaseReference = Database.database().reference().child("Post").child(postID).child("statusPostID")
-//                    let userUID = Auth.auth().currentUser?.uid
-//                    databaseReference.child(userUID!).observeSingleEvent(of: .value, with: { Snapshot in
-//                        if let statusHavefun = Snapshot.value as? [String: AnyObject]{
-//                            statusHavefunClicked = statusHavefun["statusHavefun"] as! String
-//                            print("\n\n\n\(statusHavefunClicked)555\n\n\n")
-//                        }
-//                    })
+                    
+                   // let databaseReference = Database.database().reference().child("Post").child(postID).child("statusPostID")
+                    let userUID = Auth.auth().currentUser?.uid
+                databaseRef.child(postID).child("statusPostID").child(userUID!).observeSingleEvent(of: .value, with: { Snapshot in
+                        if let statusHavefun = Snapshot.value as? [String: AnyObject]{
+                            statusHavefunClicked = statusHavefun["statusHavefun"] as! String
+                            print("\n\n\n\(statusHavefunClicked)555\n\n\n")
+                        }
+                    })
                   
                     if(postObject?["imageURL"]  != nil && postObject?["text"] != nil){
                         self.Case = 1
@@ -99,7 +99,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                     
                         }
                 
-                
+               
            }
                         
             
@@ -107,9 +107,9 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
           
         })
         
-                
-                
+        
     }
+    
     
     
     override func viewDidLoad() {
@@ -122,16 +122,24 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         tableView.dataSource = self
         
         showPostData()
-        
-        
+       
+        addRefreshController()
         
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+       
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
         
     }
+    
     
     
  
@@ -276,10 +284,37 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         print("789")
         print("233111")
         
+       
         
     }
     
+    
+    ///shared Alert box Action sheet
+    func sheardButton(_ postText:String?){
+        let activityController = UIActivityViewController(activityItems: [postText],
+                                                          applicationActivities: nil)
+        activityController.popoverPresentationController?.sourceView = view
+        present(activityController, animated: true, completion: nil)
+    }
 
+    
+    ///// reload Data button
+    @IBAction func reloadButton(_ sender: Any) {
+        //self.tableView.addSubview(refreshControl!)
+    }
+    
+     ///// reload Data slide
+    func addRefreshController(){
+        refreshControl = UIRefreshControl()
+        refreshControl?.tintColor = UIColor.black
+        refreshControl?.addTarget(self, action: #selector(refreshList), for: .valueChanged)
+        self.tableView.addSubview(refreshControl!)
+    }
+    
+    @objc func refreshList(){
+        refreshControl?.endRefreshing()
+        tableView.reloadData()
+    }
 
 }
 

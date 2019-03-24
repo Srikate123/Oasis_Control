@@ -100,6 +100,10 @@ class PostTableViewCell: UITableViewCell {
     }
     
     @IBAction func sharedClicked(_ sender: Any) {
+        Call.sheardButton(postText.text)
+        
+        
+        
     }
     
     

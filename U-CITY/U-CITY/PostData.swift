@@ -29,7 +29,7 @@ class PostData {
         self.userName = userName
         self.Case = Case!
         self.statusHavefunClicked = statusHavefunClicked
-        print("\n\n\n\(self.statusHavefunClicked)lll\n\n\n")
+    //    print("\n\n\n\(self.statusHavefunClicked)lll\n\n\n")
         self.postID = postID
         self.profileImage = profileImageUrl
         self.NumberOfHaveFun = NumberOfHaveFun
@@ -41,7 +41,7 @@ class PostData {
         self.Case = Case!
         self.statusHavefunClicked = statusHavefunClicked
         self.userName = userName
-         print("\n\n\n\(self.statusHavefunClicked)lll\n\n\n")
+    //     print("\n\n\n\(self.statusHavefunClicked)lll\n\n\n")
         self.postID = postID
         self.profileImage = profileImageUrl
         self.NumberOfHaveFun = NumberOfHaveFun
@@ -53,7 +53,7 @@ class PostData {
         self.Case = Case!
         self.userName = userName
         self.statusHavefunClicked = statusHavefunClicked
-        print("\n\n\n\(self.statusHavefunClicked)lll\n\n\n")
+    //    print("\n\n\n\(self.statusHavefunClicked)lll\n\n\n")
         self.postID = postID
         self.profileImage = profileImageUrl
         self.NumberOfHaveFun = NumberOfHaveFun

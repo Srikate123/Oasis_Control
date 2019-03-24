@@ -27,6 +27,16 @@
                             </imageView>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0P-0v-PPQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebj-BY-zqM">
+                                        <rect key="frame" x="148" y="73" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="ddd:" destination="ldP-DJ-xyT" eventType="touchUpInside" id="7kP-Ro-9cc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="667" id="EWe-oQ-DKU"/>
@@ -1450,6 +1460,9 @@
                                 <rect key="frame" x="42" y="622" width="26" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="treasure-map (1) br"/>
+                                <connections>
+                                    <action selector="reloadButton:" destination="4jS-Xu-VZ1" eventType="touchUpInside" id="SDL-n3-SbE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O18-ew-ggh" userLabel="Button_Shop">
                                 <rect key="frame" x="99" y="622" width="26" height="31"/>
@@ -1529,7 +1542,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uy8-9y-Ant" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7134" y="-1301"/>
+            <point key="canvasLocation" x="7001" y="-1301"/>
         </scene>
         <!--Shop Scene View Controller-->
         <scene sceneID="t2X-Uc-JFs">
@@ -3181,15 +3194,16 @@
         <image name="wood bar" width="192.80000305175781" height="32.799999237060547"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="4e1-eh-6oW"/>
         <segue reference="aP8-4e-XGf"/>
         <segue reference="SWT-kD-yuB"/>
         <segue reference="iRX-O6-9rf"/>
-        <segue reference="exr-Ze-Zta"/>
-        <segue reference="ST2-tw-jdF"/>
-        <segue reference="Y0N-3n-eHf"/>
+        <segue reference="fRy-we-dLj"/>
+        <segue reference="yig-0X-8Z9"/>
+        <segue reference="TcE-w6-4Eu"/>
         <segue reference="OdZ-ub-jfO"/>
-        <segue reference="pLL-JI-pPh"/>
-        <segue reference="MgP-3f-7fI"/>
+        <segue reference="rvp-ZL-mXd"/>
+        <segue reference="qnH-q8-v4U"/>
         <segue reference="D2T-eL-OdV"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -52,6 +52,7 @@
 		DD4B515B220B023D00F929E0 /* WritePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4B515A220B023D00F929E0 /* WritePostViewController.swift */; };
 		DD4B515D220C21CE00F929E0 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4B515C220C21CE00F929E0 /* PostData.swift */; };
 		DD51ACE4216DCD57009F2472 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = DD51ACE3216DCD57009F2472 /* data.json */; };
+		DD8A093C22477B2F005ABFC4 /* YBAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8A093B22477B2F005ABFC4 /* YBAlertController.swift */; };
 		DDA941DD216DBDA5002FC154 /* RegisterTableviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA941DC216DBDA5002FC154 /* RegisterTableviewController.swift */; };
 		DDC59E5521E759F900F653B4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC59E5421E759F900F653B4 /* FeedViewController.swift */; };
 		EE7175F49A26BD897C48E53D /* Pods_U_CITY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC7F36CE3B686BA08E4092F /* Pods_U_CITY.framework */; };
@@ -123,6 +124,7 @@
 		DD51ACE3216DCD57009F2472 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		DD838A9E21BAC0F8004F70AB /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		DD838AA021BAC0F8004F70AB /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		DD8A093B22477B2F005ABFC4 /* YBAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBAlertController.swift; sourceTree = "<group>"; };
 		DDA941DC216DBDA5002FC154 /* RegisterTableviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableviewController.swift; sourceTree = "<group>"; };
 		DDC59E5421E759F900F653B4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F7BB698F4E3855CFD011D0A4 /* Pods-U-CITY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U-CITY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-U-CITY/Pods-U-CITY.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				DD150B3B221DB44F0072EF9A /* Noti_notificationViewController.swift */,
 				DD150B3D221DB8370072EF9A /* Shared_notificationViewController.swift */,
 				DD399DD822084EBD00028C03 /* ProfileCustomTableViewCell.xib */,
+				DD8A093B22477B2F005ABFC4 /* YBAlertController.swift */,
 				DD399DD52208366E00028C03 /* ProfileTableViewCell.swift */,
 				41D87B752077AD2C003A868C /* Assets.xcassets */,
 				DD399DDB2209E39900028C03 /* PostImageableViewCell.swift */,
@@ -409,6 +412,7 @@
 				DD399DD922084EBD00028C03 /* ProfileCustomTableViewCell.swift in Sources */,
 				DD1BE43B21E0B9C7000C97EA /* PostTableViewCell.swift in Sources */,
 				DD4B515D220C21CE00F929E0 /* PostData.swift in Sources */,
+				DD8A093C22477B2F005ABFC4 /* YBAlertController.swift in Sources */,
 				DD150B3A221DA4A10072EF9A /* MarketCollectionViewCell.swift in Sources */,
 				41226FB82087A41700090F74 /* PreviewView.swift in Sources */,
 				DD399D362202CFFC00028C03 /* ARPlayGameViewController.swift in Sources */,
