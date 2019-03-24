@@ -51,29 +51,30 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                     let postID = postObject?["PostID"] as! String
                     let userName = postObject?["userName"] as! String
                     let profileImageUrl = postObject?["profileImage"] as? String
+                    let NumberOfHaveFun = postObject?["NumberOfHaveFun"] as? String
                     self.Case = 0
                     var statusHavefunClicked = "false"
                     
                     
-        
+                    print("\(NumberOfHaveFun)4444444")
                     
                     
                     
                     
-                    let databaseReference = Database.database().reference().child("Post").child(postID).child("statusPostID")
-                    let userUID = Auth.auth().currentUser?.uid
-                    databaseReference.child(userUID!).observeSingleEvent(of: .value, with: { Snapshot in
-                        if let statusHavefun = Snapshot.value as? [String: AnyObject]{
-                            statusHavefunClicked = statusHavefun["statusHavefun"] as! String
-                            print("\n\n\n\(statusHavefunClicked)555\n\n\n")
-                        }
-                    })
+//                    let databaseReference = Database.database().reference().child("Post").child(postID).child("statusPostID")
+//                    let userUID = Auth.auth().currentUser?.uid
+//                    databaseReference.child(userUID!).observeSingleEvent(of: .value, with: { Snapshot in
+//                        if let statusHavefun = Snapshot.value as? [String: AnyObject]{
+//                            statusHavefunClicked = statusHavefun["statusHavefun"] as! String
+//                            print("\n\n\n\(statusHavefunClicked)555\n\n\n")
+//                        }
+//                    })
                   
                     if(postObject?["imageURL"]  != nil && postObject?["text"] != nil){
                         self.Case = 1
                         let postImageUrlData = postObject?["imageURL"] as! String
                         let postTextData = postObject?["text"] as! String
-                        let Data = PostData(postText: postTextData,postImageURL: postImageUrlData,createAt: createdAtData as! String?,Case: self.Case,postOwnerID: postOwnerId,postID: postID,statusHavefunClicked: statusHavefunClicked,userName:  userName,profileImageUrl: profileImageUrl)
+                        let Data = PostData(postText: postTextData,postImageURL: postImageUrlData,createAt: createdAtData as! String?,Case: self.Case,postOwnerID: postOwnerId,postID: postID,statusHavefunClicked: statusHavefunClicked,userName:  userName,profileImageUrl: profileImageUrl,NumberOfHaveFun: NumberOfHaveFun)
                         self.postDataArr.insert(Data, at: 0) //sort Data มากไปน้อย
                         self.tableView.reloadData()
                                                 }
@@ -81,7 +82,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                     else if(postObject?["imageURL"]  == nil && postObject?["text"] != nil){
                         self.Case = 2
                         let postTextData = postObject?["text"] as! String
-                        let Data = PostData(postText: postTextData,createAt: createdAtData as! String?,Case:self.Case,postOwnerID: postOwnerId,postID: postID,statusHavefunClicked: statusHavefunClicked,userName: userName,profileImageUrl: profileImageUrl)
+                        let Data = PostData(postText: postTextData,createAt: createdAtData as! String?,Case:self.Case,postOwnerID: postOwnerId,postID: postID,statusHavefunClicked: statusHavefunClicked,userName: userName,profileImageUrl: profileImageUrl,NumberOfHaveFun: NumberOfHaveFun)
                         self.postDataArr.insert(Data, at: 0) //sort Data มากไปน้อย
                         self.tableView.reloadData()
                     }
@@ -89,7 +90,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                     else if(postObject?["imageURL"]  != nil && postObject?["text"] == nil){
                         self.Case = 3
                         let postImageUrlData = postObject?["imageURL"] as! String
-                        let Data = PostData(postImageURL: postImageUrlData,createAt: createdAtData as! String?,Case:self.Case,postOwnerID: postOwnerId,postID: postID,statusHavefunClicked: statusHavefunClicked,userName: userName,profileImageUrl: profileImageUrl)
+                        let Data = PostData(postImageURL: postImageUrlData,createAt: createdAtData as! String?,Case:self.Case,postOwnerID: postOwnerId,postID: postID,statusHavefunClicked: statusHavefunClicked,userName: userName,profileImageUrl: profileImageUrl,NumberOfHaveFun: NumberOfHaveFun)
                         self.postDataArr.insert(Data, at: 0) //sort Data มากไปน้อย
                         self.tableView.reloadData()
                             }
@@ -149,6 +150,10 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         if(Data.Case == 2){
             cell.userName.setTitle(Data.userName, for: .normal)
             cell.postIDLabel.text = Data.postID
+           
+                 cell.haveFunLabel.text = " Have fun"
+           
+            
             let statusHavefun = Bool(Data.statusHavefunClicked)
             if(statusHavefun == true){
                 cell.imageHavefun.image = UIImage(named: "smile")
@@ -173,6 +178,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
             cell.postText.text = Data.postText
             cell.postImage.image = nil
+           
             
            
 
@@ -182,6 +188,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         else if(Data.Case == 1){
          cell.userName.setTitle(Data.userName, for: .normal)
          cell.postIDLabel.text = Data.postID
+         cell.haveFunLabel.text = " Have fun"
             
          let statusHavefun = Bool(Data.statusHavefunClicked)
          if(statusHavefun == true){
@@ -211,6 +218,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
          cell.createAt.text = Data.createAt
          cell.postImage.kf.indicatorType = .activity
          cell.postImage.kf.setImage(with: URL(string: Data.postImageViewURL!),placeholder: nil,options: [.transition(.fade(0.7))],progressBlock: nil)
+        
             
             return cell
         }
@@ -218,6 +226,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
        else if(Data.Case == 3){
             cell.userName.setTitle(Data.userName, for: .normal)
             cell.postIDLabel.text = Data.postID
+            cell.haveFunLabel.text = " Have fun"
             let statusHavefun = Bool(Data.statusHavefunClicked)
             if(statusHavefun == true){
                 cell.imageHavefun.image = UIImage(named: "smile")
@@ -245,6 +254,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             cell.postImage.kf.indicatorType = .activity
             cell.postImage.kf.setImage(with: URL(string: Data.postImageViewURL!),placeholder: nil,options: [.transition(.fade(0.7))],progressBlock: nil)
             cell.postImage.layer.cornerRadius = cell.postImage.frame.size.width/4
+           
            
             return cell
         }

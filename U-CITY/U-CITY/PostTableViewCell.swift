@@ -56,7 +56,7 @@ class PostTableViewCell: UITableViewCell {
             
            
             let databaseRef = Database.database().reference().child("Post").child(postID!)
-            databaseRef.child("Havefun").observeSingleEvent(of: .value, with: { Snapshot in
+            databaseRef.observeSingleEvent(of: .value, with: { Snapshot in
                 if let HavefunObj = Snapshot.value as? [String: AnyObject]{
                     let NumberOfHaveFun = HavefunObj["NumberOfHaveFun"] as! String
                    
@@ -69,7 +69,7 @@ class PostTableViewCell: UITableViewCell {
                             // print("\n\n\n\(NumberOfHaveFunInt )\n\n\n")
                             let NumberOfHaveFunString = String(NumberOfHaveFunInt)
                             let statusHavefun = "false"
-                            self.database.child("Post").child(postID!).child("Havefun").child("NumberOfHaveFun").setValue(NumberOfHaveFunString)
+                            self.database.child("Post").child(postID!).child("NumberOfHaveFun").setValue(NumberOfHaveFunString)
                             self.database.child("Post").child(postID!).child("statusPostID").child(userUID!).child("statusHavefun").setValue(statusHavefun)
                             //self.imageHavefun.image = UIImage(named: "smile (1)")
                             
@@ -79,7 +79,7 @@ class PostTableViewCell: UITableViewCell {
                              //print("\n\n\n\(NumberOfHaveFunInt )\n\n\n")
                           let NumberOfHaveFunString = String(NumberOfHaveFunInt)
                           let statusHavefun = "true"
-                            self.database.child("Post").child(postID!).child("Havefun").child("NumberOfHaveFun").setValue(NumberOfHaveFunString)
+                            self.database.child("Post").child(postID!).child("NumberOfHaveFun").setValue(NumberOfHaveFunString)
                             self.database.child("Post").child(postID!).child("statusPostID").child(userUID!).child("statusHavefun").setValue(statusHavefun)
                                // self.imageHavefun.image = UIImage(named: "smile")
                             
@@ -113,9 +113,4 @@ class PostTableViewCell: UITableViewCell {
     
 }
 
-extension UIImage{
-    func getCropRatio() -> CGFloat{
-        var widthRatio = CGFloat(self.size.width / self.size.height)
-        return widthRatio
-    }
-}
+

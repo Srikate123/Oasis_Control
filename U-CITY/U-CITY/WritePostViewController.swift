@@ -126,7 +126,7 @@ class WritePostViewController: UIViewController,UIImagePickerControllerDelegate,
                     
                                 let PostData_1 = ["text":self.textPost,"CreatedAt":createdAt,"PostOwnerId":userUID,"PostID":randomPostID,"userName":  userNameOwnerPost,"profileImage": profileImageOwnerPost]
                                 self.userdatabaseRefer.child("Post").child(randomPostID).setValue(PostData_1)
-                self.databaseRef.child("Post").child(randomPostID).child("Havefun").updateChildValues(["NumberOfHaveFun": numberOfHaveFun])
+                self.databaseRef.child("Post").child(randomPostID).updateChildValues(["NumberOfHaveFun": numberOfHaveFun])
             }
                 else {
                     self.userdatabaseRefer = Database.database().reference()
@@ -144,7 +144,7 @@ class WritePostViewController: UIViewController,UIImagePickerControllerDelegate,
                     
                     let PostData_1 = ["text":self.textPost,"CreatedAt":createdAt,"PostOwnerId":userUID,"PostID":randomPostID,"userName":  userNameOwnerPost]
                     self.userdatabaseRefer.child("Post").child(randomPostID).setValue(PostData_1)
-                    self.databaseRef.child("Post").child(randomPostID).child("Havefun").updateChildValues(["NumberOfHaveFun": numberOfHaveFun])
+                    self.databaseRef.child("Post").child(randomPostID).updateChildValues(["NumberOfHaveFun": numberOfHaveFun])
             }
             
         })
