@@ -34,12 +34,13 @@ class MarketViewController: UIViewController,UICollectionViewDataSource , UIColl
         //        let cell = collectionView.cellForItem(at: indexPath)
         //        self.selectedItem = itemsArray[indexPath.row]
         //        cell?.backgroundColor = UIColor.green
+        self.performSegue(withIdentifier: "DetailView", sender: nil)
     }
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         //   let cell = collectionView.cellForItem(at: indexPath)
         // cell?.backgroundColor = UIColor.orange
     }
-
+    
     
 
 }

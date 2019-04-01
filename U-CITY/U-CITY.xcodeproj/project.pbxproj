@@ -20,6 +20,8 @@
 		41C57B5320902F9D00331EF3 /* ProfilePage2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C57B5220902F9D00331EF3 /* ProfilePage2ViewController.swift */; };
 		41D87B6F2077AD2A003A868C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D87B6E2077AD2A003A868C /* AppDelegate.swift */; };
 		41D87B762077AD2C003A868C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D87B752077AD2C003A868C /* Assets.xcassets */; };
+		CB4781582251D51800D62211 /* DetailItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4781572251D51800D62211 /* DetailItemViewController.swift */; };
+		CB47815E225221DC00D62211 /* uploadItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47815D225221DC00D62211 /* uploadItemViewController.swift */; };
 		DD03DE9E21F89D37008F856B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD03DE9D21F89D37008F856B /* GoogleService-Info.plist */; };
 		DD03DEA021F8AF00008F856B /* ARSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD03DE9F21F8AF00008F856B /* ARSceneViewController.swift */; };
 		DD03DEA421F8C0CE008F856B /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD03DEA321F8C0CE008F856B /* itemCell.swift */; };
@@ -89,6 +91,8 @@
 		41D87B6E2077AD2A003A868C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41D87B752077AD2C003A868C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41D87B7A2077AD2C003A868C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4781572251D51800D62211 /* DetailItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemViewController.swift; sourceTree = "<group>"; };
+		CB47815D225221DC00D62211 /* uploadItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadItemViewController.swift; sourceTree = "<group>"; };
 		DAC7F36CE3B686BA08E4092F /* Pods_U_CITY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U_CITY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD03DE9D21F89D37008F856B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DD03DE9F21F8AF00008F856B /* ARSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSceneViewController.swift; sourceTree = "<group>"; };
@@ -193,7 +197,9 @@
 				DD150B3F221E9B160072EF9A /* QrCodeScannerViewController.swift */,
 				DD03DEA321F8C0CE008F856B /* itemCell.swift */,
 				DD1BE43921E0B9C7000C97EA /* PostTableViewCell.swift */,
+				CB4781572251D51800D62211 /* DetailItemViewController.swift */,
 				DDC59E5421E759F900F653B4 /* FeedViewController.swift */,
+				CB47815D225221DC00D62211 /* uploadItemViewController.swift */,
 				DD4B515C220C21CE00F929E0 /* PostData.swift */,
 				DD03DEA921F9C290008F856B /* Main.storyboard */,
 				DD03DE9D21F89D37008F856B /* GoogleService-Info.plist */,
@@ -420,6 +426,8 @@
 				41226FBA2087AE8800090F74 /* ResetPasswordViewController.swift in Sources */,
 				DD399DBA2205B10700028C03 /* NotificationViewController.swift in Sources */,
 				DDA941DD216DBDA5002FC154 /* RegisterTableviewController.swift in Sources */,
+				CB47815E225221DC00D62211 /* uploadItemViewController.swift in Sources */,
+				CB4781582251D51800D62211 /* DetailItemViewController.swift in Sources */,
 				DDC59E5521E759F900F653B4 /* FeedViewController.swift in Sources */,
 				DD150B3E221DB8370072EF9A /* Shared_notificationViewController.swift in Sources */,
 				DD399DD62208366F00028C03 /* ProfileTableViewCell.swift in Sources */,

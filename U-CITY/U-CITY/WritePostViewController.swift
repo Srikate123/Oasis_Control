@@ -144,7 +144,7 @@ class WritePostViewController: UIViewController,UIImagePickerControllerDelegate,
                     
                     let PostData_1 = ["text":self.textPost,"CreatedAt":createdAt,"PostOwnerId":userUID,"PostID":randomPostID,"userName":  userNameOwnerPost]
                     self.userdatabaseRefer.child("Post").child(randomPostID).setValue(PostData_1)
-                    self.databaseRef.child("Post").child(randomPostID).updateChildValues(["NumberOfHaveFun": numberOfHaveFun])
+                    self.databaseRef.child("Post").child(randomPostID).setValue(["NumberOfHaveFun": numberOfHaveFun])
             }
             
         })
