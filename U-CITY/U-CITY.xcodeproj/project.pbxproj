@@ -22,6 +22,7 @@
 		41D87B762077AD2C003A868C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D87B752077AD2C003A868C /* Assets.xcassets */; };
 		CB4781582251D51800D62211 /* DetailItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4781572251D51800D62211 /* DetailItemViewController.swift */; };
 		CB47815E225221DC00D62211 /* uploadItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47815D225221DC00D62211 /* uploadItemViewController.swift */; };
+		CB478160225B53A600D62211 /* itemshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47815F225B53A500D62211 /* itemshop.swift */; };
 		DD03DE9E21F89D37008F856B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD03DE9D21F89D37008F856B /* GoogleService-Info.plist */; };
 		DD03DEA021F8AF00008F856B /* ARSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD03DE9F21F8AF00008F856B /* ARSceneViewController.swift */; };
 		DD03DEA421F8C0CE008F856B /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD03DEA321F8C0CE008F856B /* itemCell.swift */; };
@@ -93,6 +94,7 @@
 		41D87B7A2077AD2C003A868C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB4781572251D51800D62211 /* DetailItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemViewController.swift; sourceTree = "<group>"; };
 		CB47815D225221DC00D62211 /* uploadItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadItemViewController.swift; sourceTree = "<group>"; };
+		CB47815F225B53A500D62211 /* itemshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemshop.swift; sourceTree = "<group>"; };
 		DAC7F36CE3B686BA08E4092F /* Pods_U_CITY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U_CITY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD03DE9D21F89D37008F856B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DD03DE9F21F8AF00008F856B /* ARSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSceneViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				DD399D352202CFFC00028C03 /* ARPlayGameViewController.swift */,
 				DD17E5F4221C4D7A00C4CC06 /* LaunchScreenViewController.swift */,
 				DD399DB52205A0A800028C03 /* shopSceneViewController.swift */,
+				CB47815F225B53A500D62211 /* itemshop.swift */,
 				DD150B4122200DCA0072EF9A /* DetailViewController.swift */,
 				DD399DB72205A3A700028C03 /* shopCollectionViewCell.swift */,
 				DD150B39221DA4A10072EF9A /* MarketCollectionViewCell.swift */,
@@ -424,6 +427,7 @@
 				DD399D362202CFFC00028C03 /* ARPlayGameViewController.swift in Sources */,
 				DD399DB82205A3A700028C03 /* shopCollectionViewCell.swift in Sources */,
 				41226FBA2087AE8800090F74 /* ResetPasswordViewController.swift in Sources */,
+				CB478160225B53A600D62211 /* itemshop.swift in Sources */,
 				DD399DBA2205B10700028C03 /* NotificationViewController.swift in Sources */,
 				DDA941DD216DBDA5002FC154 /* RegisterTableviewController.swift in Sources */,
 				CB47815E225221DC00D62211 /* uploadItemViewController.swift in Sources */,

@@ -66,25 +66,6 @@ class uploadItemViewController:UIViewController,UIImagePickerControllerDelegate,
         
     }
     
-    func uploadImagePicker(_ img1 : UIImage,_ randomPostID:String){
-        var data = NSData()
-        data = UIImageJPEGRepresentation(img1, 0.8)! as NSData
-        let metaData =  StorageMetadata()
-        metaData.contentType = "imgage/jpg"
-        self.storageRef.child("Post").child("image").child(randomPostID).putData(data as Data, metadata: metaData){(metaData,error) in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }else{
-                print("\n\nSuccess upload!")
-                let imageURL = (metaData?.downloadURLs?[0].absoluteString)!
-              //  self.databaseRef.child("Item").child(randomPostID).updateChildValues(["imageURL": imageURL])
-                
-            }
-        }
-        
-    }
-    
     func generateRandomStirng() -> String {
         let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
         let len = UInt32(letters.length)
@@ -98,6 +79,24 @@ class uploadItemViewController:UIViewController,UIImagePickerControllerDelegate,
     }
     
     
+    func uploadImagePicker(_ img1 : UIImage,_ randomItemID:String){
+        var data = NSData()
+        data = UIImageJPEGRepresentation(img1, 0.8)! as NSData
+        let metaData =  StorageMetadata()
+        metaData.contentType = "imgage/jpg"
+        self.storageRef.child("item").child(randomItemID).putData(data as Data, metadata: metaData){(metaData,error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }else{
+                print("\n\nSuccess upload!")
+                let imageURL = (metaData?.downloadURLs?[0].absoluteString)!
+                self.databaseRef.child("Item").child(randomItemID).updateChildValues(["imageItemURL": imageURL])
+                
+            }
+        }
+        
+    }
     
     
     @IBAction func uploadall(_ sender: Any) {
@@ -106,8 +105,20 @@ class uploadItemViewController:UIViewController,UIImagePickerControllerDelegate,
         let detail2 = self.detail.text!
         let randomItemID = generateRandomStirng()
          self.userdatabaseRefer = Database.database().reference()
-       
-        let DetailItem = ["DetailItem": detail2,"ItemName":title,"Price":price2]
-       self.userdatabaseRefer.child("Item").child(randomItemID).setValue(DetailItem)    }
+        
+        ///////get time now/////////
+        self.timestamp = Date().timeIntervalSince1970
+        let lasstime = Date(timeIntervalSince1970: self.timestamp)
+        let formatter =  DateFormatter()
+        formatter.dateFormat = "dd. MMM yyyy H:mm:ss"
+        
+        let createdAt = formatter.string(from: lasstime)
+        let DetailItem = ["DetailItem": detail2,"ItemName":title,"Price":price2,"CreateAt":createdAt]
+       self.userdatabaseRefer.child("Item").child(randomItemID).setValue(DetailItem)
+        if(self.imageview.image != nil)
+        {
+            uploadImagePicker(self.ImagePicker, randomItemID)
+        }
+    }
     
 }
