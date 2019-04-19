@@ -20,7 +20,6 @@
 		41C57B5320902F9D00331EF3 /* ProfilePage2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C57B5220902F9D00331EF3 /* ProfilePage2ViewController.swift */; };
 		41D87B6F2077AD2A003A868C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D87B6E2077AD2A003A868C /* AppDelegate.swift */; };
 		41D87B762077AD2C003A868C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D87B752077AD2C003A868C /* Assets.xcassets */; };
-		CB4781582251D51800D62211 /* DetailItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4781572251D51800D62211 /* DetailItemViewController.swift */; };
 		CB47815E225221DC00D62211 /* uploadItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47815D225221DC00D62211 /* uploadItemViewController.swift */; };
 		CB478160225B53A600D62211 /* itemshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB47815F225B53A500D62211 /* itemshop.swift */; };
 		DD03DE9E21F89D37008F856B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD03DE9D21F89D37008F856B /* GoogleService-Info.plist */; };
@@ -37,12 +36,19 @@
 		DD17E5F5221C4D7B00C4CC06 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E5F4221C4D7A00C4CC06 /* LaunchScreenViewController.swift */; };
 		DD1BE43B21E0B9C7000C97EA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1BE43921E0B9C7000C97EA /* PostTableViewCell.swift */; };
 		DD1BE43C21E0B9C7000C97EA /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1BE43A21E0B9C7000C97EA /* PostTableViewCell.xib */; };
+		DD1DE3012261E344004AA680 /* UploadRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DE3002261E344004AA680 /* UploadRewardViewController.swift */; };
+		DD1DE3032261E369004AA680 /* shopSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DE3022261E368004AA680 /* shopSceneViewController.swift */; };
+		DD1DE3052261E373004AA680 /* shopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DE3042261E373004AA680 /* shopCollectionViewCell.swift */; };
+		DD1DE3072261E381004AA680 /* rewardShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DE3062261E381004AA680 /* rewardShop.swift */; };
+		DD1DE3092261ED9B004AA680 /* RewardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DE3082261ED9A004AA680 /* RewardDetailViewController.swift */; };
+		DD1DE30B226326A0004AA680 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DE30A226326A0004AA680 /* PayViewController.swift */; };
+		DD1DE30D22632A9F004AA680 /* PayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DE30C22632A9F004AA680 /* PayCollectionViewCell.swift */; };
+		DD1DE30F22632D63004AA680 /* pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DE30E22632D63004AA680 /* pay.swift */; };
+		DD1DE3112263343F004AA680 /* uploadPacketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DE3102263343F004AA680 /* uploadPacketViewController.swift */; };
 		DD34573920B2C667006CAA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD34573620B2C667006CAA32 /* LaunchScreen.storyboard */; };
 		DD399D362202CFFC00028C03 /* ARPlayGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD399D352202CFFC00028C03 /* ARPlayGameViewController.swift */; };
 		DD399DAE220432AE00028C03 /* mapkitScaeneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD399DAD220432AE00028C03 /* mapkitScaeneViewController.swift */; };
 		DD399DB42204920400028C03 /* sound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DD399DB32204920400028C03 /* sound.mp4 */; };
-		DD399DB62205A0A800028C03 /* shopSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD399DB52205A0A800028C03 /* shopSceneViewController.swift */; };
-		DD399DB82205A3A700028C03 /* shopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD399DB72205A3A700028C03 /* shopCollectionViewCell.swift */; };
 		DD399DBA2205B10700028C03 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD399DB92205B10700028C03 /* NotificationViewController.swift */; };
 		DD399DBD2205BBDE00028C03 /* NoitificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD399DBB2205BBDD00028C03 /* NoitificationTableViewCell.swift */; };
 		DD399DBE2205BBDE00028C03 /* NoitificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD399DBC2205BBDD00028C03 /* NoitificationTableViewCell.xib */; };
@@ -92,7 +98,6 @@
 		41D87B6E2077AD2A003A868C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41D87B752077AD2C003A868C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41D87B7A2077AD2C003A868C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB4781572251D51800D62211 /* DetailItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemViewController.swift; sourceTree = "<group>"; };
 		CB47815D225221DC00D62211 /* uploadItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadItemViewController.swift; sourceTree = "<group>"; };
 		CB47815F225B53A500D62211 /* itemshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemshop.swift; sourceTree = "<group>"; };
 		DAC7F36CE3B686BA08E4092F /* Pods_U_CITY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U_CITY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,12 +115,19 @@
 		DD17E5F4221C4D7A00C4CC06 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		DD1BE43921E0B9C7000C97EA /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		DD1BE43A21E0B9C7000C97EA /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		DD1DE3002261E344004AA680 /* UploadRewardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadRewardViewController.swift; sourceTree = "<group>"; };
+		DD1DE3022261E368004AA680 /* shopSceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shopSceneViewController.swift; path = "../../../../Oasis_Control/U-CITY/U-CITY/shopSceneViewController.swift"; sourceTree = "<group>"; };
+		DD1DE3042261E373004AA680 /* shopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shopCollectionViewCell.swift; path = "../../../../Oasis_Control/U-CITY/U-CITY/shopCollectionViewCell.swift"; sourceTree = "<group>"; };
+		DD1DE3062261E381004AA680 /* rewardShop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rewardShop.swift; sourceTree = "<group>"; };
+		DD1DE3082261ED9A004AA680 /* RewardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardDetailViewController.swift; sourceTree = "<group>"; };
+		DD1DE30A226326A0004AA680 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		DD1DE30C22632A9F004AA680 /* PayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD1DE30E22632D63004AA680 /* pay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pay.swift; sourceTree = "<group>"; };
+		DD1DE3102263343F004AA680 /* uploadPacketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadPacketViewController.swift; sourceTree = "<group>"; };
 		DD34573720B2C667006CAA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD399D352202CFFC00028C03 /* ARPlayGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPlayGameViewController.swift; sourceTree = "<group>"; };
 		DD399DAD220432AE00028C03 /* mapkitScaeneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapkitScaeneViewController.swift; sourceTree = "<group>"; };
 		DD399DB32204920400028C03 /* sound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.mp4; sourceTree = "<group>"; };
-		DD399DB52205A0A800028C03 /* shopSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopSceneViewController.swift; sourceTree = "<group>"; };
-		DD399DB72205A3A700028C03 /* shopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopCollectionViewCell.swift; sourceTree = "<group>"; };
 		DD399DB92205B10700028C03 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		DD399DBB2205BBDD00028C03 /* NoitificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoitificationTableViewCell.swift; sourceTree = "<group>"; };
 		DD399DBC2205BBDD00028C03 /* NoitificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoitificationTableViewCell.xib; sourceTree = "<group>"; };
@@ -177,8 +189,15 @@
 				DD399DB92205B10700028C03 /* NotificationViewController.swift */,
 				DD399DBB2205BBDD00028C03 /* NoitificationTableViewCell.swift */,
 				DD399DBC2205BBDD00028C03 /* NoitificationTableViewCell.xib */,
+				DD1DE30E22632D63004AA680 /* pay.swift */,
+				DD1DE30A226326A0004AA680 /* PayViewController.swift */,
+				DD1DE30C22632A9F004AA680 /* PayCollectionViewCell.swift */,
 				DD399DD722084EBD00028C03 /* ProfileCustomTableViewCell.swift */,
+				DD1DE3002261E344004AA680 /* UploadRewardViewController.swift */,
 				DD150B3B221DB44F0072EF9A /* Noti_notificationViewController.swift */,
+				DD1DE3022261E368004AA680 /* shopSceneViewController.swift */,
+				DD1DE3042261E373004AA680 /* shopCollectionViewCell.swift */,
+				DD1DE3062261E381004AA680 /* rewardShop.swift */,
 				DD150B3D221DB8370072EF9A /* Shared_notificationViewController.swift */,
 				DD399DD822084EBD00028C03 /* ProfileCustomTableViewCell.xib */,
 				DD8A093B22477B2F005ABFC4 /* YBAlertController.swift */,
@@ -187,20 +206,19 @@
 				DD399DDB2209E39900028C03 /* PostImageableViewCell.swift */,
 				DD399DDC2209E39A00028C03 /* PostImageableViewCell.xib */,
 				DD34573620B2C667006CAA32 /* LaunchScreen.storyboard */,
+				DD1DE3102263343F004AA680 /* uploadPacketViewController.swift */,
 				DD03DE9F21F8AF00008F856B /* ARSceneViewController.swift */,
 				DD399DB32204920400028C03 /* sound.mp4 */,
 				DD399D352202CFFC00028C03 /* ARPlayGameViewController.swift */,
 				DD17E5F4221C4D7A00C4CC06 /* LaunchScreenViewController.swift */,
-				DD399DB52205A0A800028C03 /* shopSceneViewController.swift */,
 				CB47815F225B53A500D62211 /* itemshop.swift */,
 				DD150B4122200DCA0072EF9A /* DetailViewController.swift */,
-				DD399DB72205A3A700028C03 /* shopCollectionViewCell.swift */,
 				DD150B39221DA4A10072EF9A /* MarketCollectionViewCell.swift */,
 				DD150B37221DA3F40072EF9A /* MarketViewController.swift */,
 				DD150B3F221E9B160072EF9A /* QrCodeScannerViewController.swift */,
 				DD03DEA321F8C0CE008F856B /* itemCell.swift */,
+				DD1DE3082261ED9A004AA680 /* RewardDetailViewController.swift */,
 				DD1BE43921E0B9C7000C97EA /* PostTableViewCell.swift */,
-				CB4781572251D51800D62211 /* DetailItemViewController.swift */,
 				DDC59E5421E759F900F653B4 /* FeedViewController.swift */,
 				CB47815D225221DC00D62211 /* uploadItemViewController.swift */,
 				DD4B515C220C21CE00F929E0 /* PostData.swift */,
@@ -425,13 +443,12 @@
 				DD150B3A221DA4A10072EF9A /* MarketCollectionViewCell.swift in Sources */,
 				41226FB82087A41700090F74 /* PreviewView.swift in Sources */,
 				DD399D362202CFFC00028C03 /* ARPlayGameViewController.swift in Sources */,
-				DD399DB82205A3A700028C03 /* shopCollectionViewCell.swift in Sources */,
 				41226FBA2087AE8800090F74 /* ResetPasswordViewController.swift in Sources */,
 				CB478160225B53A600D62211 /* itemshop.swift in Sources */,
+				DD1DE3112263343F004AA680 /* uploadPacketViewController.swift in Sources */,
 				DD399DBA2205B10700028C03 /* NotificationViewController.swift in Sources */,
 				DDA941DD216DBDA5002FC154 /* RegisterTableviewController.swift in Sources */,
 				CB47815E225221DC00D62211 /* uploadItemViewController.swift in Sources */,
-				CB4781582251D51800D62211 /* DetailItemViewController.swift in Sources */,
 				DDC59E5521E759F900F653B4 /* FeedViewController.swift in Sources */,
 				DD150B3E221DB8370072EF9A /* Shared_notificationViewController.swift in Sources */,
 				DD399DD62208366F00028C03 /* ProfileTableViewCell.swift in Sources */,
@@ -442,21 +459,28 @@
 				DD399DAE220432AE00028C03 /* mapkitScaeneViewController.swift in Sources */,
 				4190F104208DC0B5005C2FF0 /* TableViewCell.swift in Sources */,
 				417D640E208C8DF7003DDD85 /* SWRevealViewController.m in Sources */,
+				DD1DE30F22632D63004AA680 /* pay.swift in Sources */,
 				416F2E4B2085FD78003807D0 /* ConstAlertBox.swift in Sources */,
+				DD1DE3072261E381004AA680 /* rewardShop.swift in Sources */,
 				41C57B5320902F9D00331EF3 /* ProfilePage2ViewController.swift in Sources */,
 				41AD17B6208F1D9200A10CCD /* ProfilePage1ViewController.swift in Sources */,
 				41A4CE532087476200B12F47 /* Register_ViewController.swift in Sources */,
 				DD399DD42208361100028C03 /* ProfileSceneViewController.swift in Sources */,
 				DD399DBD2205BBDE00028C03 /* NoitificationTableViewCell.swift in Sources */,
 				DD150B4222200DCB0072EF9A /* DetailViewController.swift in Sources */,
+				DD1DE30D22632A9F004AA680 /* PayCollectionViewCell.swift in Sources */,
 				417D6410208CAE21003DDD85 /* MenubarViewController.swift in Sources */,
 				DD4B515B220B023D00F929E0 /* WritePostViewController.swift in Sources */,
 				DD150B40221E9B160072EF9A /* QrCodeScannerViewController.swift in Sources */,
 				DD03DEA421F8C0CE008F856B /* itemCell.swift in Sources */,
+				DD1DE30B226326A0004AA680 /* PayViewController.swift in Sources */,
 				DD399DDD2209E39A00028C03 /* PostImageableViewCell.swift in Sources */,
 				DD150B38221DA3F40072EF9A /* MarketViewController.swift in Sources */,
 				DD17E5F5221C4D7B00C4CC06 /* LaunchScreenViewController.swift in Sources */,
-				DD399DB62205A0A800028C03 /* shopSceneViewController.swift in Sources */,
+				DD1DE3052261E373004AA680 /* shopCollectionViewCell.swift in Sources */,
+				DD1DE3012261E344004AA680 /* UploadRewardViewController.swift in Sources */,
+				DD1DE3032261E369004AA680 /* shopSceneViewController.swift in Sources */,
+				DD1DE3092261ED9B004AA680 /* RewardDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,7 +622,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8T2R3GP4S9;
 				INFOPLIST_FILE = "U-CITY/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,7 +647,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8T2R3GP4S9;
 				INFOPLIST_FILE = "U-CITY/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

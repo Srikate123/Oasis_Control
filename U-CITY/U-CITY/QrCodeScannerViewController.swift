@@ -79,7 +79,7 @@ class QrCodeScannerViewController: UIViewController,AVCaptureMetadataOutputObjec
        
 
         self.videoPreview.layer.addSublayer(avCaptureVideoPreviewLayer)
-        self.backgroundVideoPreview.layer.addSublayer(avCaptureVideoPreviewLayer)
+        //self.videoPreview.layer.addSublayer(avCaptureVideoPreviewLayer)
         
         avCaptureSession.startRunning()
         
