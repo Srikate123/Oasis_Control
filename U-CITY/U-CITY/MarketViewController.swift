@@ -13,11 +13,18 @@ class MarketViewController: UIViewController,UICollectionViewDataSource , UIColl
     
      @IBOutlet weak var itemCollectionView: UICollectionView!
     
+    @IBOutlet weak var Level: UILabel!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var imageUser: UIImageView!
+    @IBOutlet weak var coinLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.itemCollectionView.dataSource = self
         self.itemCollectionView.delegate = self
         showItem()
+        showCoin()
+        showLevel()
+        showDataProfile()
        
     }
    
@@ -46,6 +53,73 @@ class MarketViewController: UIViewController,UICollectionViewDataSource , UIColl
         //   let cell = collectionView.cellForItem(at: indexPath)
         // cell?.backgroundColor = UIColor.orange
     }
+    
+    
+    func showCoin(){
+        let userUID = Auth.auth().currentUser?.uid
+        
+        
+        
+        
+        let databaseRef = Database.database().reference()
+        databaseRef.child("Inventory").child(userUID!).child("asset").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let userDict = snapshot.value as! [String: Any]
+            
+            
+            let coinText = userDict["Coin"] as! String
+            
+            self.coinLabel.text = coinText
+            
+            
+        })
+    }
+    
+    func showLevel(){
+        let userUID = Auth.auth().currentUser?.uid
+        
+        
+        
+        
+        let databaseRef = Database.database().reference()
+        databaseRef.child("Inventory").child(userUID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let userDict = snapshot.value as! [String: Any]
+            let Level = userDict["Level"] as! String
+            self.Level.text = "Lv. "+Level
+            
+            
+        })
+    }
+    
+    func showDataProfile(){
+        let userUID = Auth.auth().currentUser?.uid
+        
+        
+        
+        
+        let databaseRef = Database.database().reference()
+        databaseRef.child("users").child(userUID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let userDict = snapshot.value as! [String: Any]
+            
+            let Username = userDict["Firstname"] as! String
+            self.userName.text = Username
+            if(userDict["userImageUrl"] != nil){
+                let Image = userDict["userImageUrl"] as? String
+                self.imageUser.kf.indicatorType = .activity
+                self.imageUser.kf.setImage(with: URL(string: Image!),placeholder: nil,options: [.transition(.fade(0.7))],progressBlock: nil)
+                self.imageUser.layer.cornerRadius = self.imageUser.frame.size.width/2
+                self.imageUser.clipsToBounds = true
+            }
+            
+            
+        })
+    }
+    
+    
+    
+    
     
     var  ItemdataArr = [itemshop]()
     

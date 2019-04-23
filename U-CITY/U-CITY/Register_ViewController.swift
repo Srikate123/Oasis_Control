@@ -444,11 +444,29 @@ class Register_ViewController: UIViewController,UITableViewDataSource,UITableVie
             let dataProfile = ["Email":userEmail,"Password":userPassword,"Firstname":firstname,"Lastname":lassname,"Birthday":"Day "+date+" Month "+month+" Years "+years,"Sex":"Male","CreatedAt":createdAt]
             
             userdatabaseRefer.child("users").child(userUID).setValue(dataProfile)
+            
+            let userID = Auth.auth().currentUser?.uid
+            self.userdatabaseRefer = Database.database().reference()
+            
+            let DetailAsset = ["Coin":"1000"]
+            let Detail_1 = ["Level":"1"]
+            self.userdatabaseRefer.child("Inventory").child(userID!).child("asset").setValue(DetailAsset)
+            self.userdatabaseRefer.child("Inventory").child(userID!).updateChildValues(Detail_1)
             return
         }else{
             let dataProfile = ["Email":userEmail,"Password":userPassword,"Firstname":firstname,"Lastname":lassname,"Birthday":"Day "+date+" Month "+month+" Years "+years,"Sex":"faMale","CreatedAt":createdAt]
             
             userdatabaseRefer.child("users").child(userUID).setValue(dataProfile)
+            
+            let userID = Auth.auth().currentUser?.uid
+            self.userdatabaseRefer = Database.database().reference()
+            
+            let Detail = ["Coin":"1000"]
+            let Detail_1 = ["Level":"1"]
+            self.userdatabaseRefer.child("Inventory").child(userID!).child("asset").setValue(Detail)
+            
+              self.userdatabaseRefer.child("Inventory").child(userID!).updateChildValues(Detail_1)
+            
         }
         
         //How to update data into firebase//

@@ -119,8 +119,11 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
             if error ==  nil {
                 //print("fgsfrg")
                 //self.LastLoginAt()
+             
+                
                 
                 self.performSegue(withIdentifier: "LoginPage", sender: nil)
+                
                
             }else{
                 self.EmailTextfield.backgroundColor = UIColor.orange
@@ -217,6 +220,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
         userdatabaseRefer = Database.database().reference()
         userdatabaseRefer.child("users").child(userUID).setValue(dataProfile)
         
+        
+        
+      
         self.performSegue(withIdentifier: "LoginPage", sender: nil)
         
         
@@ -230,7 +236,20 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
         let lastLogin = formatter.string(from: lassLogintime)
         self.time = lastLogin
     }
-    
+    //////generate key///////////
+    func generateRandomStirng() -> String {
+        let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+        let len = UInt32(letters.length)
+        var randomString = ""
+        for _ in 0 ..< 8 {
+            let random = arc4random_uniform(len)
+            var nextChar = letters.character(at: Int(random))
+            randomString += NSString(characters: &nextChar, length: 1) as String
+        }
+        return randomString
+    }
+
+
     
     //////////
 

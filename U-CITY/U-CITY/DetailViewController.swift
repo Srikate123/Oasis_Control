@@ -10,12 +10,21 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var rewardImage: UIImageView!
+    @IBOutlet weak var rewardName: UILabel!
+    @IBOutlet weak var rewardDetail: UITextView!
+    @IBOutlet weak var rewardPrice: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
     
-
+    @IBAction func buyClicked(_ sender: Any) {
+        
+        
+        
+    }
+    
     
 }
