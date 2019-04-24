@@ -1554,12 +1554,20 @@
                                                     <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rewardDetail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vH-N6-ElF">
+                                                    <rect key="frame" x="27" y="77" width="97" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <connections>
                                             <outlet property="itemCost" destination="YJ6-3A-7eI" id="W5C-G8-HNg"/>
                                             <outlet property="itemImage" destination="BA0-q2-Yc1" id="Gq4-Th-8bB"/>
                                             <outlet property="itemTitle" destination="HzG-Ht-cqr" id="zGl-EQ-sbm"/>
+                                            <outlet property="rewardDetail" destination="4vH-N6-ElF" id="k4M-bm-QOa"/>
                                             <outlet property="rewardID" destination="aTF-5a-lBa" id="t3B-nZ-81A"/>
                                         </connections>
                                     </collectionViewCell>
@@ -1826,7 +1834,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjJ-WM-E9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="3357.571214392804"/>
+            <point key="canvasLocation" x="740" y="3358"/>
         </scene>
         <!--Notification View Controller-->
         <scene sceneID="Wts-jz-geM">

@@ -64,6 +64,7 @@
 		DD8A093C22477B2F005ABFC4 /* YBAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8A093B22477B2F005ABFC4 /* YBAlertController.swift */; };
 		DDA941DD216DBDA5002FC154 /* RegisterTableviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA941DC216DBDA5002FC154 /* RegisterTableviewController.swift */; };
 		DDC59E5521E759F900F653B4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC59E5421E759F900F653B4 /* FeedViewController.swift */; };
+		DDE314A0226EF73400F98589 /* rewardDetailClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE3149F226EF73400F98589 /* rewardDetailClass.swift */; };
 		EE7175F49A26BD897C48E53D /* Pods_U_CITY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC7F36CE3B686BA08E4092F /* Pods_U_CITY.framework */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +146,7 @@
 		DD8A093B22477B2F005ABFC4 /* YBAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBAlertController.swift; sourceTree = "<group>"; };
 		DDA941DC216DBDA5002FC154 /* RegisterTableviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableviewController.swift; sourceTree = "<group>"; };
 		DDC59E5421E759F900F653B4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		DDE3149F226EF73400F98589 /* rewardDetailClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rewardDetailClass.swift; sourceTree = "<group>"; };
 		F7BB698F4E3855CFD011D0A4 /* Pods-U-CITY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U-CITY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-U-CITY/Pods-U-CITY.debug.xcconfig"; sourceTree = "<group>"; };
 		FFB2C202118B47833F0870A2 /* Pods-U-CITY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U-CITY.release.xcconfig"; path = "Pods/Target Support Files/Pods-U-CITY/Pods-U-CITY.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,7 +198,9 @@
 				DD1DE3002261E344004AA680 /* UploadRewardViewController.swift */,
 				DD150B3B221DB44F0072EF9A /* Noti_notificationViewController.swift */,
 				DD1DE3022261E368004AA680 /* shopSceneViewController.swift */,
+				DDE3149F226EF73400F98589 /* rewardDetailClass.swift */,
 				DD1DE3042261E373004AA680 /* shopCollectionViewCell.swift */,
+				DD150B4122200DCA0072EF9A /* DetailViewController.swift */,
 				DD1DE3062261E381004AA680 /* rewardShop.swift */,
 				DD150B3D221DB8370072EF9A /* Shared_notificationViewController.swift */,
 				DD399DD822084EBD00028C03 /* ProfileCustomTableViewCell.xib */,
@@ -212,7 +216,6 @@
 				DD399D352202CFFC00028C03 /* ARPlayGameViewController.swift */,
 				DD17E5F4221C4D7A00C4CC06 /* LaunchScreenViewController.swift */,
 				CB47815F225B53A500D62211 /* itemshop.swift */,
-				DD150B4122200DCA0072EF9A /* DetailViewController.swift */,
 				DD150B39221DA4A10072EF9A /* MarketCollectionViewCell.swift */,
 				DD150B37221DA3F40072EF9A /* MarketViewController.swift */,
 				DD150B3F221E9B160072EF9A /* QrCodeScannerViewController.swift */,
@@ -461,6 +464,7 @@
 				417D640E208C8DF7003DDD85 /* SWRevealViewController.m in Sources */,
 				DD1DE30F22632D63004AA680 /* pay.swift in Sources */,
 				416F2E4B2085FD78003807D0 /* ConstAlertBox.swift in Sources */,
+				DDE314A0226EF73400F98589 /* rewardDetailClass.swift in Sources */,
 				DD1DE3072261E381004AA680 /* rewardShop.swift in Sources */,
 				41C57B5320902F9D00331EF3 /* ProfilePage2ViewController.swift in Sources */,
 				41AD17B6208F1D9200A10CCD /* ProfilePage1ViewController.swift in Sources */,
