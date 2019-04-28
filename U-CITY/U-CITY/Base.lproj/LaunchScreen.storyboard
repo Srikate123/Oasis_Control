@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="KtX-9E-acj">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                <viewController id="yuz-sD-UJN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ibq-pm-edX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG_login" translatesAutoresizingMaskIntoConstraints="NO" id="6Rg-jH-4Ic">
-                                <rect key="frame" x="-256" y="-15" width="853" height="694"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                </accessibility>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGOasis2-1" translatesAutoresizingMaskIntoConstraints="NO" id="gbD-OV-uuh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="694" id="MwP-TB-mMY"/>
-                                    <constraint firstAttribute="width" constant="853" id="mIw-HZ-YXb"/>
+                                    <constraint firstAttribute="width" secondItem="gbD-OV-uuh" secondAttribute="height" multiplier="375:667" id="S1t-cy-DER"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_BgLogin" translatesAutoresizingMaskIntoConstraints="NO" id="cHG-fA-3Fe">
-                                <rect key="frame" x="93" y="246" width="189" height="154"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGOasis" translatesAutoresizingMaskIntoConstraints="NO" id="fV5-4B-1N1">
+                                <rect key="frame" x="-111" y="0.0" width="598" height="667"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="189" id="BXw-bK-UCL"/>
-                                    <constraint firstAttribute="height" constant="154" id="UPm-XS-QGi"/>
+                                    <constraint firstAttribute="width" secondItem="fV5-4B-1N1" secondAttribute="height" multiplier="26:29" id="gt9-qk-1FN"/>
                                 </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoOasis" translatesAutoresizingMaskIntoConstraints="NO" id="LxP-X2-WZs">
+                                <rect key="frame" x="67" y="203" width="240" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="6Rg-jH-4Ic" secondAttribute="trailing" constant="-222" id="3n3-Wj-mFc"/>
-                            <constraint firstItem="6Rg-jH-4Ic" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-15" id="FV7-5D-mkF"/>
-                            <constraint firstItem="cHG-fA-3Fe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="Jph-0Q-f9q"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cHG-fA-3Fe" secondAttribute="trailing" constant="93" id="Ucc-2v-WWp"/>
-                            <constraint firstItem="6Rg-jH-4Ic" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-256" id="YPz-bs-sIH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cHG-fA-3Fe" secondAttribute="bottom" constant="267" id="YoA-lF-urj"/>
-                            <constraint firstAttribute="bottom" secondItem="6Rg-jH-4Ic" secondAttribute="bottom" constant="-12" id="tZS-Xj-2ck"/>
+                            <constraint firstItem="fV5-4B-1N1" firstAttribute="top" secondItem="Ibq-pm-edX" secondAttribute="top" id="1tq-np-gzR"/>
+                            <constraint firstItem="gbD-OV-uuh" firstAttribute="bottom" secondItem="LgO-zw-oOk" secondAttribute="bottom" id="59a-Iv-8z3"/>
+                            <constraint firstItem="gbD-OV-uuh" firstAttribute="trailing" secondItem="LgO-zw-oOk" secondAttribute="trailing" id="A6O-2v-xiA"/>
+                            <constraint firstAttribute="trailing" secondItem="fV5-4B-1N1" secondAttribute="trailing" constant="-112" id="ClW-Cb-ynC"/>
+                            <constraint firstItem="fV5-4B-1N1" firstAttribute="leading" secondItem="Ibq-pm-edX" secondAttribute="leading" constant="-111" id="MkW-Pn-OS2"/>
+                            <constraint firstItem="fV5-4B-1N1" firstAttribute="bottom" secondItem="LgO-zw-oOk" secondAttribute="bottom" id="O71-cL-hV7"/>
+                            <constraint firstItem="gbD-OV-uuh" firstAttribute="top" secondItem="Ibq-pm-edX" secondAttribute="top" id="XiX-j9-ahO"/>
+                            <constraint firstItem="gbD-OV-uuh" firstAttribute="leading" secondItem="LgO-zw-oOk" secondAttribute="leading" id="w3D-uu-p27"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="LgO-zw-oOk"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMS-rL-zLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="-364" y="264.91754122938534"/>
         </scene>
     </scenes>
     <resources>
-        <image name="BG_login" width="2048" height="1365"/>
-        <image name="Logo_BgLogin" width="204" height="204"/>
+        <image name="BGOasis" width="962" height="640"/>
+        <image name="BGOasis2-1" width="360" height="640"/>
+        <image name="LogoOasis" width="166" height="156"/>
     </resources>
 </document>

@@ -85,9 +85,10 @@ class MarketViewController: UIViewController,UICollectionViewDataSource , UIColl
         databaseRef.child("Inventory").child(userUID!).observeSingleEvent(of: .value, with: { (snapshot) in
             
             let userDict = snapshot.value as! [String: Any]
+            if(userDict["Level"] != nil){
             let Level = userDict["Level"] as! String
             self.Level.text = "Lv. "+Level
-            
+            }
             
         })
     }
